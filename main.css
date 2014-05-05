@@ -2,7 +2,6 @@
 
 html {
     height: 100%;
-    min-width:1000px;
 }
 
 body {
@@ -10,80 +9,110 @@ body {
     font-size: 12px;
     margin: 0 auto;
     height: 100%;
-    padding: 0;
-    min-width:1000px;
-}
-
-div, li, span, b, a, ul, ol, input, p, h1, h2, h3, h4, h5, h6, dl, dd, dt, form {
-    margin: 0;
-    padding: 0;
+    min-width: 1200px;
     position: relative;
+    padding: 0;
+    background: #f7f7f7;
 }
 
 ul {
-    list-style:none;
-    padding-bottom:20px;
-    padding-left:20px;
+    list-style: none;
 }
 
-ul li {
-    padding:0 0 5px 10px;
-    background:url("../img/listMark.png") 0 6px no-repeat;
-    font-size:12px;
-    line-height:14px;
+ol {
+    padding: 0 80px 20px;
 }
 
-p {
-    padding-bottom:15px;
+ol li {
+    padding: 0 0 5px;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-    border: none;
+div, li, span, b, a, ul, input, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 a {
-    color: #0c4da2;
+    color: #0099cc;
     outline: none;
 }
 
-a:hover {
-    text-decoration: none;
+a img {
+    border: none;
 }
 
-/* Headings */
+a:hover {
+    color: #e91c42;
+}
 
 h1 {
-    font-size: 21px;
-    padding-bottom: 20px;
+    position: relative;
+    z-index: 10;
+    font-size: 87px;
+    font-weight: normal;
+    padding: 0 0 10px 35px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 0.85em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 a:hover {
+    color: #fff;
 }
 
 h2 {
-    font-size: 22px;
-    padding-bottom: 20px;
+    position: relative;
+    z-index: 10;
+    font-size: 31px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 0 0 0 35px;
+    text-transform: uppercase;
+    color: #fff;
+    clear: both;
 }
 
 h3 {
-    font-size: 14px;
-    padding-bottom: 20px;
-    color:#0078c5;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 h4 {
-    font-size: 18px;
-    padding-bottom: 15px;
-    color:#ff8a00;
-    font-weight:normal;
+    font-size: 21px;
+    color: #e91c42;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 0 20px 10px;
+    clear: both;
+}
+
+h4 a {
+    color: #e91c42;
+    text-decoration: none;
 }
 
 h5 {
-    font-size: 12px;
-    padding-bottom: 10px;
+    font-size: 14px;
+    padding: 0 0 0 5px;
+    white-space: nowrap;
+    font-weight: normal;
 }
 
 h6 {
-    font-size: 12px;
+    font-size: 11px;
+    color: #e91c42;
     font-weight: normal;
-    padding-bottom: 10px;
+    padding: 0 0 20px;
+    line-height: 14px;
 }
