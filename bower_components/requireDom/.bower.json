@@ -1,0 +1,40 @@
+{
+  "name": "requireDom",
+  "main": "requireDom.js",
+  "version": "0.0.4",
+  "authors": [
+    "Andrew Borovin <a@borovin.com>"
+  ],
+  "description": "init AMD modules on DOM elements",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "amd",
+    "requirejs",
+    "dom"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "path",
+    "example.html",
+    "karma.conf.js",
+    "karma.main.js"
+  ],
+  "homepage": "https://github.com/borovin/requireDom",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.4",
+    "commit": "97389497d711e352bcf1229d43426e4474446e60"
+  },
+  "_source": "git://github.com/borovin/requireDom.git",
+  "_target": "~0.0.4",
+  "_originalSource": "requireDom",
+  "_direct": true
+}

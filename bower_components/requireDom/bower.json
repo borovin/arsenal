@@ -1,0 +1,29 @@
+{
+    "name": "requireDom",
+    "main": "requireDom.js",
+    "version": "0.0.1",
+    "authors": [
+        "Andrew Borovin <a@borovin.com>"
+    ],
+    "description": "init AMD modules on DOM elements",
+    "moduleType": [
+        "amd"
+    ],
+    "keywords": [
+        "amd",
+        "requirejs",
+        "dom"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests",
+        "path",
+        "example.html",
+        "karma.conf.js",
+        "karma.main.js"
+    ]
+}
