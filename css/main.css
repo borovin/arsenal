@@ -88,14 +88,6 @@ span.corner.br {
 /*
  шапка страницы
  */
-div#header {
-	width: 1000px;
-	padding: 35px 0 0;
-	position: relative;
-	height: 45px;
-	z-index: 1000;
-    overflow: hidden;
-}
 
 body#inner div#header {
 	width: 100%;
@@ -108,62 +100,6 @@ body#inner div#plashka {
 	top: 35px;
 	background: #000;
 	z-index: 100;
-}
-
-/*
- логотип
- */
-a.logo {
-	background: transparent url(../img/logo.png) no-repeat scroll left top;
-	display: block;
-	height: 30px;
-	left: 40px;
-	position: absolute;
-	top: 42px;
-	width: 134px;
-	cursor: pointer;
-}
-
-/*
- главное меню
- */
-ul#mainmenu {
-	padding: 12px 0 0 225px;
-	float: left;
-}
-
-ul#mainmenu li {
-	float: left;
-	position: relative;
-	margin-right: 30px;
-	-margin-right:25px;
-}
-
-ul#mainmenu li a {
-	color: #fff;
-	font-size: 15px;
-	display: block;
-	float: left;
-	height: 19px;
-	position: relative;
-	left: 15px;
-	padding-right: 15px;
-}
-
-ul#mainmenu li.active {
-	background: url(../img/tabli.png) 0 0 no-repeat;
-}
-
-ul#mainmenu li.active a {
-	color: #000;
-	text-decoration: none;
-	background: url(../img/tabli.png) right 0 no-repeat;
-}
-
-ul#mainmenu li:hover {
-}
-
-ul#mainmenu li:hover a {
 }
 
 div#login {
@@ -615,13 +551,6 @@ div.zapros textarea {
 	width: 100%;
 	height: 100px;
 	margin: 5px 0 20px;
-}
-
-/* основной контент */
-div#content {
-	overflow: hidden;
-	min-height: 100%;
-	position: relative;
 }
 
 div#main {

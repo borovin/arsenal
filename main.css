@@ -1,4 +1,6 @@
 @import "css/main.css";
+@import "blocks/page/page.css";
+@import "blocks/mainNavigation/mainNavigation.css";
 
 html {
     height: 100%;
