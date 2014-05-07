@@ -1,6 +1,7 @@
 @import "css/main.css";
 @import "blocks/page/page.css";
 @import "blocks/mainNavigation/mainNavigation.css";
+@import "blocks/carousel/carousel.css";
 
 html {
     height: 100%;
