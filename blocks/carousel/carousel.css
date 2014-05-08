@@ -13,7 +13,8 @@
     left: 0;
     color: #fff;
     white-space: normal;
-    margin-right: -4px;
+    margin-right: -3px;
+    background-color: #444;
 }
 
 .carousel__comments {
@@ -70,6 +71,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    opacity: 0.7;
 }
 
 .carousel__date {
