@@ -1,6 +1,6 @@
 {
-    "name": "requireDom",
-    "main": "requireDom.js",
+    "name": "initDom",
+    "main": "initDom.js",
     "version": "0.0.1",
     "authors": [
         "Andrew Borovin <a@borovin.com>"
@@ -24,6 +24,7 @@
         "path",
         "example.html",
         "karma.conf.js",
+        "package.json",
         "karma.main.js"
     ]
 }

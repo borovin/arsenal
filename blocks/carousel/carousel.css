@@ -1,6 +1,5 @@
 .carousel__list {
     position: relative;
-    overflow: hidden;
     margin-top: -80px;
     white-space: nowrap;
 }
@@ -10,7 +9,6 @@
     vertical-align: top;
     position: relative;
     width: 1000px;
-    height: 580px;
     overflow: hidden;
     left: 0;
     color: #fff;
@@ -36,7 +34,10 @@
 }
 
 .carousel__commentsNum {
-    display: block;
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #000000;
+    border-radius: 4px;
     font-size: 16px;
 }
 
@@ -81,13 +82,12 @@
 }
 
 .carousel__author {
-    position: relative;
     z-index: 10;
-    padding: 0 0 0 35px;
     font-size: 16px;
     font-style: italic;
     position: absolute;
     bottom: 35px;
+    left: 35px;
 }
 
 .carousel__nextLink {

@@ -1,12 +1,16 @@
 require.config({
     paths: {
         jquery: 'bower_components/jquery/dist/jquery',
-        requireDom: 'bower_components/requireDom/requireDom'
+        initDom: 'bower_components/initDom/initDom',
+        jcarousel: 'bower_components/jcarousel/dist/jquery.jcarousel'
+    },
+    shim: {
+        jcarousel: ['jquery']
     }
 });
 
-require(['jquery', 'requireDom'], function($, requireDom){
+require(['jquery', 'initDom'], function($, initDom){
     $(function(){
-        requireDom();
+        initDom();
     });
 });
