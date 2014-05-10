@@ -102,3 +102,8 @@
     cursor: pointer;
     z-index: 100;
 }
+
+.carousel__navigationLink{
+    display: inline-block;
+    padding: 5px 10px;
+}
