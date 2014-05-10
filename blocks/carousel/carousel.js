@@ -14,12 +14,30 @@ define(function(require, exports, module) {
         });
 
         $el.on('jcarousel:animateend', function(event, carousel) {
-            $el.find('.carousel__item').eq(0).appendTo($el.find('.carousel__list'));
+            var $first = carousel.first(),
+                firstId = $first.attr('id'),
+                firstIndex = $el.find('.carousel__item').index($first);
+
+            $el.find('.carousel__navigationLink[rel="' + firstId + '"]')
+                .addClass('carousel__navigationLink_active')
+                .siblings('.carousel__navigationLink')
+                .removeClass('carousel__navigationLink_active');
+
+            $el.find('.carousel__item').slice(0, firstIndex).appendTo($el.find('.carousel__list'));
             carousel.reload();
         });
 
-        $el.on('click', '.carousel__nextLink', function(){
+        $el.on('click', '.carousel__nextLink', function(e){
+            e.preventDefault();
             $el.jcarousel('scroll', '+=1');
+        });
+
+        $el.on('click', '.carousel__navigationLink', function(e){
+            e.preventDefault();
+
+            var itemId = $(this).attr('rel');
+
+            $el.jcarousel('scroll', $('#' + itemId));
         });
     }
 });
