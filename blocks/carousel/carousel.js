@@ -14,11 +14,11 @@ define(function(require, exports, module) {
         });
 
         $el.on('jcarousel:animateend', function(event, carousel) {
-            var $first = carousel.first(),
-                firstId = $first.attr('id'),
-                firstIndex = $el.find('.carousel__item').index($first);
+            var $target = carousel.target(),
+                targetId = $target.attr('id'),
+                firstIndex = $el.find('.carousel__item').index($target);
 
-            $el.find('.carousel__navigationLink[rel="' + firstId + '"]')
+            $el.find('.carousel__navigationLink[rel="' + targetId + '"]')
                 .addClass('carousel__navigationLink_active')
                 .siblings('.carousel__navigationLink')
                 .removeClass('carousel__navigationLink_active');
