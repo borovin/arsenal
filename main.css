@@ -3,6 +3,7 @@
 @import "blocks/mainNavigation/mainNavigation.css";
 @import "blocks/carousel/carousel.css";
 @import "blocks/wizard/wizard.css";
+@import "blocks/checkbox/checkbox.css";
 
 html {
     height: 100%;

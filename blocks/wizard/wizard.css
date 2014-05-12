@@ -1,5 +1,6 @@
 .wizard {
     padding-bottom: 40px;
+    position: relative;
 }
 
 .wizard__content {
@@ -20,24 +21,69 @@
     padding: 0 15px;
 }
 
-.wizard__tab {
+.wizard__tabItem {
     display: inline-block;
     margin-right: 5px;
 }
 
 .wizard__tabLink {
     display: block;
-    background-color: #ccc;
+    background-color: #dddddd;
     color: #333;
     border-radius: 5px 5px 0 0;
     padding: 10px 20px;
     font-size: 16px;
     text-decoration: none;
-    border-top: 2px solid #ccc;
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
+    border-top: 2px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    border-right: 2px solid #dddddd;
 }
 
 .wizard__tabLink_active {
     background-color: #fff;
+    cursor: default;
+}
+
+.wizard__steps {
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.wizard__stepItem {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.wizard__stepLink {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+}
+
+.wizard__stepLink_active {
+    border-bottom: none;
+    color: #db2c4c;
+    cursor: default;
+}
+
+.wizard__stepContent {
+    display: none;
+}
+
+.wizard__stepContent_active {
+    display: block;
+}
+
+.wizard__column {
+    float: left;
+    padding-right: 40px;
+}
+
+.wizard .checkbox {
+    display: block;
+    padding: 5px 20px 5px 5px;
+    margin-left: -5px;
+}
+
+.wizard .checkbox:hover {
+    background-color: #eee;
 }
