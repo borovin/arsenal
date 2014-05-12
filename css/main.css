@@ -422,15 +422,6 @@ div.zapros textarea {
 	margin: 5px 0 20px;
 }
 
-div#main {
-	overflow: hidden;
-	padding: 0 20px;
-	z-index: 100;
-	position: relative;
-	clear: both;
-	margin-bottom: 120px;
-}
-
 /*
  левая колонка основного контента
  */

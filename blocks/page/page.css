@@ -1,4 +1,4 @@
-.page__content {
+.page__wrapper {
     overflow: hidden;
     min-height: 100%;
     position: relative;
@@ -22,4 +22,17 @@
     height: 45px;
     z-index: 1000;
     overflow: hidden;
+}
+
+.page__content {
+    overflow: hidden;
+    padding: 0 20px;
+    z-index: 100;
+    position: relative;
+    clear: both;
+    margin-bottom: 120px;
+}
+
+.page__intro {
+    padding-bottom: 40px;
 }

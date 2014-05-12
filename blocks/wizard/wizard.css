@@ -1,0 +1,43 @@
+.wizard {
+    padding-bottom: 40px;
+}
+
+.wizard__content {
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 10px #999;
+    overflow: hidden;
+}
+
+.wizard__content_active {
+    display: block;
+}
+
+.wizard__tabs {
+    white-space: nowrap;
+    padding: 0 15px;
+}
+
+.wizard__tab {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.wizard__tabLink {
+    display: block;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+.wizard__tabLink_active {
+    background-color: #fff;
+}

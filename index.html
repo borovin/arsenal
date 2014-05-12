@@ -7,7 +7,7 @@
     <script src="bower_components/requirejs/require.js" data-main="main.js"></script>
 </head>
 <body class="page">
-<div class="page__content">
+<div class="page__wrapper">
 <div class="page__header">
     <a class="page__logo"></a>
     <ul class="mainNavigation">
@@ -283,7 +283,8 @@
 <a href="#" class="carousel__nextLink"></a>
 
 <div class="carousel__navigation">
-    <a rel="carousel__item_0" href="#" class="carousel__navigationLink carousel__navigationLink_active">Управление продажами</a>
+    <a rel="carousel__item_0" href="#" class="carousel__navigationLink carousel__navigationLink_active">Управление
+        продажами</a>
     <a rel="carousel__item_1" href="#" class="carousel__navigationLink">Продажи</a>
     <a rel="carousel__item_2" href="#" class="carousel__navigationLink">Управление</a>
     <a rel="carousel__item_3" href="#" class="carousel__navigationLink">Управление продажами</a>
@@ -298,8 +299,8 @@
 
 </div>
 
-<div id="main">
-<div class="intro">
+<div class="page__content">
+<div class="page__intro">
     <h3>ПРОГРАММЫ И ТРЕННИНГИ</h3>
 
     <p>
@@ -310,31 +311,19 @@
         эту связь или чувствуют по прошествии времени.
     </p>
 </div>
-<div class="filters">
-<ul class="tabs">
-    <li class="active">
-        <a href="#">Подбор программы</a>
-        <span class="corner"></span>
+<div class="wizard">
+<ul class="wizard__tabs">
+    <li class="wizard__tab">
+        <a class="wizard__tabLink wizard__tabLink_active" href="#">Подбор программы</a>
     </li>
-    <li>
-        <a href="#">Составить свой запрос на обучение</a>
-        <span class="corner"></span>
+    <li class="wizard__tab">
+        <a class="wizard__tabLink" href="#">Составить свой запрос на обучение</a>
     </li>
-    <li>
-        <a href="#">Интуитивный подбор</a>
-        <span class="corner"></span>
+    <li class="wizard__tab">
+        <a class="wizard__tabLink" href="#">Интуитивный подбор</a>
     </li>
 </ul>
-<div class="whiteblock">
-<div class="bordertop">
-    <span class="corner tl"></span>
-    <span class="tc"></span>
-    <span class="corner tr"></span>
-</div>
-<div class="borderleft">
-<div class="borderright">
-</div>
-<div class="content">
+<div class="wizard__content wizard__content_active">
 <form action="#">
 <ul class="steps">
     <li class="active">
@@ -547,78 +536,39 @@
 </div>
 </form>
 </div>
-</div>
-<div class="borderbottom">
-    <span class="corner bl"></span>
-    <span class="bc"></span>
-    <span class="corner br"></span>
-</div>
-</div>
-<div class="whiteblock">
-    <div class="bordertop">
-        <span class="corner tl"></span>
-        <span class="tc"></span>
-        <span class="corner tr"></span>
-    </div>
-    <div class="borderleft">
-        <div class="borderright">
+<div class="wizard__content">
+    <form action="#">
+        <div class="zapros">
+            <label>
+                Имя
+            </label>
+            <input type="text" class="text"/>
+            <label>
+                Телефон
+            </label>
+            <input type="text" class="text"/>
+            <label>
+                Запрос
+            </label>
+            <textarea rows="#" cols="#"></textarea>
         </div>
-        <div class="content">
-            <form action="#">
-                <div class="zapros">
-                    <label>
-                        Имя
-                    </label>
-                    <input type="text" class="text"/>
-                    <label>
-                        Телефон
-                    </label>
-                    <input type="text" class="text"/>
-                    <label>
-                        Запрос
-                    </label>
-                    <textarea rows="#" cols="#"></textarea>
-                </div>
-                <div class="button">
-                    <span class="corner"></span>
-                    <input type="submit" value="Отправить"/>
-                </div>
-            </form>
+        <div class="button">
+            <span class="corner"></span>
+            <input type="submit" value="Отправить"/>
         </div>
-    </div>
-    <div class="borderbottom">
-        <span class="corner bl"></span>
-        <span class="bc"></span>
-        <span class="corner br"></span>
-    </div>
+    </form>
 </div>
-<div class="whiteblock">
-    <div class="bordertop">
-        <span class="corner tl"></span>
-        <span class="tc"></span>
-        <span class="corner tr"></span>
-    </div>
-    <div class="borderleft">
-        <div class="borderright">
+<div class="wizard__content">
+    <form action="#">
+        <div id="rainbow" class="rainbowbig">
+            <div id="rainbowslider" class="scroll">
+            </div>
         </div>
-        <div class="content">
-            <form action="#">
-                <div id="rainbow" class="rainbowbig">
-                    <div id="rainbowslider" class="scroll">
-                    </div>
-                </div>
-                <div class="button">
-                    <span class="corner"></span>
-                    <input type="submit" value="Подобрать" name="but"/>
-                </div>
-            </form>
+        <div class="button">
+            <span class="corner"></span>
+            <input type="submit" value="Подобрать" name="but"/>
         </div>
-    </div>
-    <div class="borderbottom">
-        <span class="corner bl"></span>
-        <span class="bc"></span>
-        <span class="corner br"></span>
-    </div>
+    </form>
 </div>
 </div>
 <!-- -->
