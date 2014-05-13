@@ -4,7 +4,6 @@
 }
 
 .wizard__content {
-    display: none;
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
@@ -12,22 +11,14 @@
     overflow: hidden;
 }
 
-.wizard__content_active {
-    display: block;
-}
-
 .wizard__tabs {
     white-space: nowrap;
     padding: 0 15px;
 }
 
-.wizard__tabItem {
+.wizard__tabLink {
     display: inline-block;
     margin-right: 5px;
-}
-
-.wizard__tabLink {
-    display: block;
     background-color: #dddddd;
     color: #333;
     border-radius: 5px 5px 0 0;
@@ -39,7 +30,7 @@
     border-right: 2px solid #dddddd;
 }
 
-.wizard__tabLink_active {
+.wizard__tabLink.page__tab_active {
     background-color: #fff;
     cursor: default;
 }
@@ -49,28 +40,16 @@
     padding-bottom: 20px;
 }
 
-.wizard__stepItem {
-    display: inline-block;
-    margin-right: 20px;
-}
-
 .wizard__stepLink {
+    margin-right: 20px;
     border-bottom: 1px dashed;
     text-decoration: none;
 }
 
-.wizard__stepLink_active {
+.wizard__stepLink.page__tab_active {
     border-bottom: none;
     color: #db2c4c;
     cursor: default;
-}
-
-.wizard__stepContent {
-    display: none;
-}
-
-.wizard__stepContent_active {
-    display: block;
 }
 
 .wizard__column {
@@ -79,11 +58,23 @@
 }
 
 .wizard .checkbox {
-    display: block;
     padding: 5px 20px 5px 5px;
     margin-left: -5px;
 }
 
 .wizard .checkbox:hover {
     background-color: #eee;
+}
+
+.wizard__columns{
+    position: relative;
+}
+
+.wizard__columns .wizard__columnItem {
+    width: 33%;
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding-right: 20px;
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" media="screen, print" href="main.css"/>
     <script src="bower_components/requirejs/require.js" data-main="main.js"></script>
 </head>
-<body class="page">
+<body class="page" require="blocks/page/page">
 <div class="page__wrapper">
 <div class="page__header">
     <a class="page__logo"></a>
@@ -312,28 +312,18 @@
     </p>
 </div>
 <div class="wizard">
-<ul class="wizard__tabs">
-    <li class="wizard__tabItem">
-        <a class="wizard__tabLink wizard__tabLink_active" href="#">Подбор программы</a>
-    </li>
-    <li class="wizard__tabItem">
-        <a class="wizard__tabLink" href="#">Составить свой запрос на обучение</a>
-    </li>
-    <li class="wizard__tabItem">
-        <a class="wizard__tabLink" href="#">Интуитивный подбор</a>
-    </li>
-</ul>
-<div class="wizard__content wizard__content_active">
+<div class="wizard__tabs">
+    <a class="page__tab wizard__tabLink page__tab_active" rel="tab1" href="#">Подбор программы</a>
+    <a class="page__tab wizard__tabLink" rel="tab2" href="#">Составить свой запрос на обучение</a>
+    <a class="page__tab wizard__tabLink" rel="tab3" href="#">Интуитивный подбор</a>
+</div>
+<div id="tab1" class="page__tabContent wizard__content page__tabContent_active">
 <form action="#">
-<ul class="wizard__steps">
-    <li class="wizard__stepItem">
-        <a class="wizard__stepLink wizard__stepLink_active" href="#">Вид обучения</a>
-    </li>
-    <li class="wizard__stepItem">
-        <a class="wizard__stepLink" href="#">Темы, навыки</a>
-    </li>
-</ul>
-<div class="wizard__stepContent wizard__stepContent_active">
+<div class="wizard__steps">
+    <a class="page__tab wizard__stepLink page__tab_active" rel="tab4" href="#">Вид обучения</a>
+    <a class="page__tab wizard__stepLink" rel="tab5" href="#">Темы, навыки</a>
+</div>
+<div id="tab4" class="page__tabContent wizard__stepContent page__tabContent_active">
     <div class="wizard__column">
         <h6>Тип</h6>
         <ul>
@@ -440,117 +430,117 @@
         </ul>
     </div>
 </div>
-<div class="wizard__stepContent">
-    <ul class="threecols">
-        <li>
+<div id="tab5" class="page__tabContent wizard__stepContent">
+    <ul class="wizard__columns">
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[800]" value="800"/>
                 <span class="checkbox__text">Повысить уровень абстракции в понимании мира</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[803]" value="803"/>
                 <span class="checkbox__text">Разбетонировать мозги</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[557]" value="557"/>
                 <span class="checkbox__text">Антикризис</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[806]" value="806"/>
                 <span class="checkbox__text">Креативность/инновационность</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[809]" value="809"/>
                 <span class="checkbox__text">Art &amp; Management</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[551]" value="551"/>
                 <span class="checkbox__text">Управление компанией</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[812]" value="812"/>
                 <span class="checkbox__text">Управление изменениями/проектами</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[815]" value="815"/>
                 <span class="checkbox__text">Управление хаосом</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[549]" value="549"/>
                 <span class="checkbox__text">Управление персоналом</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[819]" value="819"/>
                 <span class="checkbox__text">Корпоративная культура</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[821]" value="821"/>
                 <span class="checkbox__text">Командообразование</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[823]" value="823"/>
                 <span class="checkbox__text">Эффективная экономика компании</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[825]" value="825"/>
                 <span class="checkbox__text">Управление сервисом</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[828]" value="828"/>
                 <span class="checkbox__text">Управление продажами</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[553]" value="553"/>
                 <span class="checkbox__text">Продажи, переговоры</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[555]" value="555"/>
                 <span class="checkbox__text">Мастерская лидерства</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[547]" value="547"/>
                 <span class="checkbox__text">Мастерство деловой коммуникации</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[836]" value="836"/>
                 <span class="checkbox__text">Мастерская секретаря/помощника руководителя</span>
             </label>
         </li>
-        <li>
+        <li class="wizard__columnItem">
             <label class="checkbox">
                 <input type="checkbox" name="ftema[545]" value="545"/>
                 <span class="checkbox__text">Обучение тренеров</span>
@@ -564,7 +554,7 @@
 </div>
 </form>
 </div>
-<div class="wizard__content">
+<div id="tab2" class="page__tabContent wizard__content">
     <form action="#">
         <div class="zapros">
             <label>
@@ -586,7 +576,7 @@
         </div>
     </form>
 </div>
-<div class="wizard__content">
+<div id="tab3" class="page__tabContent wizard__content">
     <form action="#">
         <div id="rainbow" class="rainbowbig">
             <div id="rainbowslider" class="scroll">

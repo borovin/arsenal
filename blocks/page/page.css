@@ -36,3 +36,11 @@
 .page__intro {
     padding-bottom: 40px;
 }
+
+.page__tabContent{
+    display: none;
+}
+
+.page__tabContent_active{
+    display: block;
+}

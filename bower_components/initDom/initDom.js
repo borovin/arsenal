@@ -11,7 +11,7 @@
 
         opt = opt || {};
 
-        opt.root = opt.root || [document.body];
+        opt.root = opt.root || [document];
         opt.attributeName = opt.attributeName || 'require';
         opt.handler = opt.handler || function(el) {
             if (typeof requirejs === 'function'){
