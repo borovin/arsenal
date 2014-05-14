@@ -4,6 +4,7 @@
 @import "blocks/carousel/carousel.css";
 @import "blocks/wizard/wizard.css";
 @import "blocks/checkbox/checkbox.css";
+@import "blocks/button/button.css";
 
 html {
     height: 100%;
