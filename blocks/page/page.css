@@ -26,7 +26,7 @@
 
 .page__content {
     overflow: hidden;
-    padding: 0 20px;
+    padding: 0 30px;
     z-index: 100;
     position: relative;
     clear: both;
@@ -37,10 +37,34 @@
     padding-bottom: 40px;
 }
 
-.page__tabContent{
+.page__tabContent {
     display: none;
 }
 
-.page__tabContent_active{
+.page__tabContent_active {
     display: block;
+}
+
+.page__leftSide {
+    float: left;
+    width: 65%;
+}
+
+.page__rightSide {
+    float: right;
+    width: 30%;
+}
+
+.page__tags {
+    padding-right: 50px;
+}
+
+.page__tags a {
+    color: #707070;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+
+.page__tabs {
+
 }

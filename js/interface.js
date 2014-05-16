@@ -202,6 +202,6 @@ $(document).ready(function() {
 
 	$('input[type=checkbox]').addClass('checkbox');
 
-	$('input[type=text]').addClass('text');
+	$('input[type=text]').addClass('postList__text');
 
 });

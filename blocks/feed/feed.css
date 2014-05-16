@@ -1,0 +1,17 @@
+.feed__tabs {
+    padding-bottom: 20px;
+}
+
+.feed__tab {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px dashed;
+}
+
+.feed__tab.page__tab_active {
+    border: none;
+    color: #666666;
+}

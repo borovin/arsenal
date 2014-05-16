@@ -491,57 +491,6 @@ ul.menu1 li.active a {
 	color: #666666;
 }
 
-div.postblock {
-	padding: 20px 14px 80px;
-}
-
-div.post {
-	position: relative;
-	padding: 0 0 20px 30px;
-	clear: both;
-	-zoom: 1;
-}
-
-a.comments {
-	position: absolute;
-	top: 0;
-	left: -12px;
-	display: block;
-	width: 33px;
-	height: 23px;
-	text-align: center;
-	font-size: 9px;
-	background: url(../img/comments1.png) 0 0 no-repeat;
-	color: #fff;
-	padding-top: 2px;
-	cursor:pointer;
-}
-
-div.post div.date {
-	color: #cacaca;
-}
-
-div.post p {
-	font-size: 13px;
-	color: #909090;
-	padding: 10px 0;
-}
-
-div.post p span.text {
-	font-size: 13px;
-	color: #909090;
-	padding-top: 5px;
-	display: block;
-}
-
-div.post p a {
-	font-size: 17px;
-	color: #0099CC;
-}
-
-div.post p a:hover {
-	color: #E91C42;
-}
 
 a.rss {
 	text-transform: uppercase;
@@ -736,24 +685,6 @@ div.dvd img {
 	height: 100%;
 }
 
-span.tags {
-	font-style: italic;
-	color: #cccccc;
-	font-size: 11px;
-	display: block;
-	padding: 10px 0;
-}
-
-div.post span.tags a {
-	font-size: 11px;
-}
-
-a.all {
-	border-bottom: 1px dashed;
-	text-decoration: none;
-	margin: 0 8px 0 30px;
-}
-
 span.num {
 	color: #cccccc;
 	font-size: 13px;
@@ -788,7 +719,7 @@ div.comment div.ctext {
 	-zoom: 1;
 }
 
-div.comment div.ctext div.date {
+div.comment div.ctext div.postList__date {
 	position: absolute;
 	right: 10px;
 	top: 5px;

@@ -5,6 +5,8 @@
 @import "blocks/wizard/wizard.css";
 @import "blocks/checkbox/checkbox.css";
 @import "blocks/button/button.css";
+@import "blocks/feed/feed.css";
+@import "blocks/postList/postList.css";
 
 html {
     height: 100%;

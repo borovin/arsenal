@@ -1,0 +1,47 @@
+.postList {
+    padding: 0 0 80px;
+}
+
+.postList__item {
+    position: relative;
+    padding: 0 0 20px;
+    clear: both;
+}
+
+.postList__date {
+    color: #cacaca;
+}
+
+.postList__text {
+    font-size: 13px;
+    color: #909090;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.postList__title {
+    font-size: 17px;
+    color: #0099CC;
+    padding-bottom: 10px;
+}
+
+.postList__title:hover {
+    color: #E91C42;
+}
+
+.postList__tags {
+    font-style: italic;
+    color: #cccccc;
+    font-size: 11px;
+    display: block;
+    padding: 0 0 10px;
+}
+
+.postList__tags a{
+    margin-left: 5px;
+}
+
+.postList__all {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+}
