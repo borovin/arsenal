@@ -803,7 +803,7 @@ div#promo {
 	-zoom: 1;
 }
 
-div#promo div.block {
+div#promo div.promo__item {
 	float: left;
 	width: 16%;
 	padding: 0 40px;
@@ -811,7 +811,7 @@ div#promo div.block {
 	-zoom: 1;
 }
 
-div#promo a.ico {
+div#promo a.promo__icon {
 	font-size: 21px;
 	color: #e91c42;
 	font-weight: normal;
@@ -823,7 +823,7 @@ div#promo a.ico {
 	max-width: 400px;
 }
 
-div#promo a.ico span {
+div#promo a.promo__icon span {
 	display: block;
 	position: relative;
 	height: 200px;
@@ -831,7 +831,7 @@ div#promo a.ico span {
 	cursor: default;
 }
 
-div#promo a.ico img {
+div#promo a.promo__icon img {
 	position: absolute;
 	left: 0;
 	bottom: 0;
