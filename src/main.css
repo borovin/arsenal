@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Cuprum&subset=latin,cyrillic);
-@import "blocks/page/page.css";
+@import "kit/page/page.css";
 @import "blocks/mainNavigation/mainNavigation.css";
 @import "blocks/carousel/carousel.css";
 @import "blocks/wizard/wizard.css";

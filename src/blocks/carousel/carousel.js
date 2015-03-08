@@ -1,43 +1,115 @@
-define(function(require, exports, module) {
-    //requirements
+define(function (require) {
 
-    require('jquery');
-    require('jcarousel');
+    var Block = require('kit/block/block');
 
-    return function(el){
-        var $el = $(el);
+    return Block.extend({
+        activeItemIndex: 0,
+        globalEvents: {
+            'keydown': function (e) {
 
-        $el.jcarousel({
-            transitions: {
-                transforms3d: true
+                var block = this;
+
+                switch (e.which) {
+                    case 37:
+                        block.prevItem();
+                        break;
+                    case 39:
+                        block.nextItem();
+                        break;
+                }
             }
-        });
+        },
+        events: {
+            'click .carousel__nextLink': function (e) {
 
-        $el.on('jcarousel:animateend', function(event, carousel) {
-            var $target = carousel.target(),
-                targetId = $target.attr('id'),
-                firstIndex = $el.find('.carousel__item').index($target);
+                e.preventDefault();
 
-            $el.find('.carousel__navigationLink[rel="' + targetId + '"]')
+                var block = this;
+
+                block.nextItem();
+            },
+            'click .carousel__navigationLink': function (e) {
+
+                e.preventDefault();
+
+                var block = this,
+                    index = block.$navigationLink.index(e.currentTarget);
+
+                block.toItem(index);
+            }
+        },
+        render: function () {
+
+            var block = this,
+                render = Block.prototype.render.apply(block, arguments);
+
+            block.$items = block.$('.carousel__item');
+            block.$list = block.$('.carousel__list');
+            block.$navigationLink = block.$('.carousel__navigationLink');
+
+            return render;
+        },
+        nextItem: function () {
+
+            var block = this;
+
+            block.toItem(block.activeItemIndex + 1);
+
+        },
+        prevItem: function () {
+
+            var block = this;
+
+            block.toItem(block.activeItemIndex - 1);
+        },
+        toItem: function (index) {
+
+            var block = this,
+                indexDiff = index - block.activeItemIndex,
+                firstItem = block.el.querySelector('.carousel__item');
+
+            if ($(firstItem).is(':animated')) {
+                return;
+            }
+
+            if (index >= block.$items.length) {
+                block.activeItemIndex = 0;
+            } else if (index < 0) {
+                block.activeItemIndex = block.$items.length - 1;
+            } else {
+                block.activeItemIndex = index;
+            }
+
+            block.$navigationLink
+                .eq(block.activeItemIndex)
                 .addClass('carousel__navigationLink_active')
                 .siblings('.carousel__navigationLink')
                 .removeClass('carousel__navigationLink_active');
 
-            $el.find('.carousel__item').slice(0, firstIndex).appendTo($el.find('.carousel__list'));
-            carousel.reload();
-        });
+            if (indexDiff > 0) {
+                $(firstItem).animate({
+                    marginLeft: -1000 * indexDiff
+                }, function () {
+                    block.$('.carousel__item:lt(' + indexDiff + ')')
+                        .css('marginLeft', 0)
+                        .appendTo(block.$list);
+                });
+            }
 
-        $el.on('click', '.carousel__nextLink', function(e){
-            e.preventDefault();
-            $el.jcarousel('scroll', '+=1');
-        });
+            if (indexDiff < 0) {
 
-        $el.on('click', '.carousel__navigationLink', function(e){
-            e.preventDefault();
+                block.$('.carousel__item:lt(' + indexDiff + ')')
+                    .appendTo(block.$list);
 
-            var itemId = $(this).attr('rel');
+                firstItem = block.el.querySelector('.carousel__item');
 
-            $el.jcarousel('scroll', $('#' + itemId));
-        });
-    }
+                firstItem.style.marginLeft = 1000 * indexDiff + 'px';
+
+                $(firstItem).animate({
+                    marginLeft: 0
+                });
+            }
+
+        }
+    });
 });

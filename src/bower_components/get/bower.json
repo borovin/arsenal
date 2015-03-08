@@ -1,0 +1,22 @@
+{
+  "name": "get",
+  "main": "get.js",
+  "version": "0.0.0",
+  "authors": [
+    "a@borovin.com"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.1.0"
+  }
+}

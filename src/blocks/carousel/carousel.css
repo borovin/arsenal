@@ -17,6 +17,7 @@
 .carousel__list {
     position: relative;
     white-space: nowrap;
+    font-size: 0;
 }
 
 .carousel__item {
@@ -28,7 +29,6 @@
     left: 0;
     color: #fff;
     white-space: normal;
-    margin-right: -3px;
     background-color: #444;
 }
 
@@ -135,6 +135,7 @@
 .carousel__navigationLink{
     display: inline-block;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .carousel__navigationLink_active{
