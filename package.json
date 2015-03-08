@@ -1,0 +1,11 @@
+{
+  "name": "dorproject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf ./build && node ./tools/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public"
+  },
+  "devDependencies": {
+    "express": "^4.10.7"
+  }
+}

@@ -1,0 +1,14 @@
+.mainNavigation {
+    padding: 12px 0 0 225px;
+    float: left;
+}
+
+.mainNavigation__link {
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    height: 19px;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
