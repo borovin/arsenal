@@ -8,6 +8,7 @@
     min-height: 20px;
     min-width: 20px;
     line-height: 20px;
+    margin-bottom: 5px;
 }
 
 .checkbox_empty {
@@ -15,7 +16,7 @@
 }
 
 .checkbox__text {
-    padding-left: 25px;
+    padding-left: 30px;
     position: relative;
     display: inline-block;
 }

@@ -300,17 +300,16 @@
     </div>
     <div class="wizard">
         <div class="wizard__tabs">
-            <a class="page__tab wizard__tabLink page__tab_active" rel="tab1" href="#">Подбор программы</a>
-            <a class="page__tab wizard__tabLink" rel="tab2" href="#">Составить свой запрос на обучение</a>
-            <a class="page__tab wizard__tabLink" rel="tab3" href="#">Интуитивный подбор</a>
+            <a class="page__tab wizard__tabLink page__tab_active" data-tab="tab1" href="#">Подбор программы</a>
+            <a class="page__tab wizard__tabLink" data-tab="tab2" href="#">Составить свой запрос на обучение</a>
         </div>
-        <div id="tab1" class="page__tabContent wizard__content page__tabContent_active">
+        <div data-tab="tab1" class="page__tabContent wizard__content page__tabContent_active">
             <form action="#">
                 <div class="wizard__steps">
-                    <a class="page__tab wizard__stepLink page__tab_active" rel="tab4" href="#">Вид обучения</a>
-                    <a class="page__tab wizard__stepLink" rel="tab5" href="#">Темы, навыки</a>
+                    <a class="page__tab wizard__stepLink page__tab_active" data-tab="tab4" href="#">Вид обучения</a>
+                    <a class="page__tab wizard__stepLink" data-tab="tab5" href="#">Темы, навыки</a>
                 </div>
-                <div id="tab4" class="page__tabContent wizard__stepContent page__tabContent_active">
+                <div data-tab="tab4" class="page__tabContent wizard__stepContent page__tabContent_active">
                     <div class="wizard__column">
                         <h6>Тип</h6>
                         <ul>
@@ -417,7 +416,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="tab5" class="page__tabContent wizard__stepContent">
+                <div data-tab="tab5" class="page__tabContent wizard__stepContent">
                     <ul class="wizard__columns">
                         <li class="wizard__columnItem">
                             <label class="checkbox">
@@ -540,33 +539,36 @@
                 </div>
             </form>
         </div>
-        <div id="tab2" class="page__tabContent wizard__content">
-            <form action="#">
-                <div class="zapros">
-                    <label>
-                        Имя
-                    </label>
-                    <input type="text" class="text"/>
-                    <label>
-                        Телефон
-                    </label>
-                    <input type="text" class="text"/>
+        <div data-tab="tab2" class="page__tabContent wizard__content">
+            <form class="form" action="#">
+
+                <div class="page__row">
+                    <div class="page__col page__col_6">
+                        <div class="form__data">
+                            <label>
+                                Имя
+                            </label>
+                            <input autofocus name="name" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="page__col page__col_6">
+                        <div class="form__data">
+                            <label>
+                                Телефон
+                            </label>
+                            <input name="phone" type="text"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__data">
                     <label>
                         Запрос
                     </label>
-                    <textarea rows="#" cols="#"></textarea>
+                    <textarea name="request"></textarea>
                 </div>
-                <div class="wizard__buttons">
-                    <button class="button" type="submit">Подобрать</button>
-                </div>
-            </form>
-        </div>
-        <div id="tab3" class="page__tabContent wizard__content">
-            <form action="#">
-                <div id="rainbow" class="rainbowbig">
-                    <div id="rainbowslider" class="scroll">
-                    </div>
-                </div>
+
                 <div class="wizard__buttons">
                     <button class="button" type="submit">Подобрать</button>
                 </div>
@@ -576,11 +578,11 @@
     <div class="page__leftSide">
         <div class="feed">
             <div class="feed__tabs">
-                <a class="feed__tab page__tab page__tab_active" href="#" rel="tab6">Новости</a>
-                <a class="feed__tab page__tab" href="#" rel="tab7">Блоги</a>
-                <a class="feed__tab page__tab" href="#" rel="tab8">Комментарии</a>
+                <a class="feed__tab page__tab page__tab_active" href="#" data-tab="tab6">Новости</a>
+                <a class="feed__tab page__tab" href="#" data-tab="tab7">Блоги</a>
+                <a class="feed__tab page__tab" href="#" data-tab="tab8">Комментарии</a>
             </div>
-            <div id="tab6" class="page__tabContent page__tabContent_active postList">
+            <div data-tab="tab6" class="page__tabContent page__tabContent_active postList">
                 <div class="postList__item">
                     <div class="postList__date">
                         7 февраля
@@ -671,7 +673,7 @@
                 </div>
                 <a class="postList__all" href="#">все новости</a>
             </div>
-            <div id="tab7" class="page__tabContent postList">
+            <div data-tab="tab7" class="page__tabContent postList">
                 <div class="postList__item">
                     <div class="postList__title">
                         <a href="#">Тренинг «Публичное выступление» (для старших подростков 14-17 лет)</a>
@@ -734,7 +736,7 @@
                 </div>
                 <a class="postList__all" href="#">все записи</a>
             </div>
-            <div id="tab8" class="page__tabContent comments">
+            <div data-tab="tab8" class="page__tabContent comments">
                 <div class="comments__item">
                     <div class="comments__ava">
                         <img src="img/ava1.jpg" alt="#"/>
@@ -756,10 +758,10 @@
                         дальнейшего
                         развития. На некоторые ситуации смотрю по-другому, и удивляюсь, почему раньше я не так это
                         видела.
-            <span class="comments__links">
-                <a href="#" class="comments__moreLink">Подробнее</a>
-                <a href="#" class="comments__answerLink">ответить</a>
-            </span>
+                        <span class="comments__links">
+                            <a href="#" class="comments__moreLink">Подробнее</a>
+                            <a href="#" class="comments__answerLink">ответить</a>
+                        </span>
                     </div>
                 </div>
                 <div class="comments__item">
@@ -783,10 +785,10 @@
                         дальнейшего
                         развития. На некоторые ситуации смотрю по-другому, и удивляюсь, почему раньше я не так это
                         видела.
-            <span class="comments__links">
-                <a href="#" class="comments__moreLink">Подробнее</a>
-                <a href="#" class="comments__answerLink">ответить</a>
-            </span>
+                        <span class="comments__links">
+                            <a href="#" class="comments__moreLink">Подробнее</a>
+                            <a href="#" class="comments__answerLink">ответить</a>
+                        </span>
                     </div>
                 </div>
                 <div class="comments__item">
@@ -810,10 +812,10 @@
                         дальнейшего
                         развития. На некоторые ситуации смотрю по-другому, и удивляюсь, почему раньше я не так это
                         видела.
-            <span class="comments__links">
-                <a href="#" class="comments__moreLink">Подробнее</a>
-                <a href="#" class="comments__answerLink">ответить</a>
-            </span>
+                        <span class="comments__links">
+                            <a href="#" class="comments__moreLink">Подробнее</a>
+                            <a href="#" class="comments__answerLink">ответить</a>
+                        </span>
                     </div>
                 </div>
                 <div class="comments__item">
@@ -837,10 +839,10 @@
                         дальнейшего
                         развития. На некоторые ситуации смотрю по-другому, и удивляюсь, почему раньше я не так это
                         видела.
-            <span class="comments__links">
-                <a href="#" class="comments__moreLink">Подробнее</a>
-                <a href="#" class="comments__answerLink">ответить</a>
-            </span>
+                        <span class="comments__links">
+                            <a href="#" class="comments__moreLink">Подробнее</a>
+                            <a href="#" class="comments__answerLink">ответить</a>
+                        </span>
                     </div>
                 </div>
                 <a class="comments__allLink">все комментарии</a>

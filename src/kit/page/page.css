@@ -86,3 +86,27 @@
     font-style: normal;
     padding: 0 40px;
 }
+
+.page__row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.page__col {
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.page__row .page__col:first-child {
+    padding-left: 0;
+}
+
+.page__row .page__col:last-child {
+    padding-right: 0;
+}
+
+.page__col_6 {
+    width: 50%;
+}

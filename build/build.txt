@@ -19,6 +19,10 @@ blocks/feed/feed.css
 ----------------
 blocks/feed/feed.css
 
+blocks/form/form.css
+----------------
+blocks/form/form.css
+
 blocks/mainNavigation/mainNavigation.css
 ----------------
 blocks/mainNavigation/mainNavigation.css
@@ -46,6 +50,7 @@ blocks/button/button.css
 blocks/feed/feed.css
 blocks/postList/postList.css
 blocks/comments/comments.css
+blocks/form/form.css
 main.css
 
 pages/main.js

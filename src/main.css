@@ -8,6 +8,7 @@
 @import "blocks/feed/feed.css";
 @import "blocks/postList/postList.css";
 @import "blocks/comments/comments.css";
+@import "blocks/form/form.css";
 
 html {
     height: 100%;
@@ -128,4 +129,25 @@ h6 {
     font-weight: normal;
     padding: 0 0 20px;
     line-height: 14px;
+}
+
+label {
+    display: block;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+input[type="text"], textarea {
+    outline: none;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #0388A6;
 }

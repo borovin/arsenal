@@ -24,20 +24,34 @@
     margin-top: 20px;
     background: #fff;
     position: relative;
+    box-shadow: 0 0 3px #999;
+    border-radius: 2px;
 }
 
-.comments__text:before {
+.comments__text::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -11px;
+    left: 30px;
+    box-shadow: 0 0 3px #999;
+    z-index: -1;
+}
+
+.comments__text::after {
     display: block;
     content: "";
     width: 0;
     height: 0;
-    border-top: none;
-    border-bottom: 15px solid #fff;
-    border-right: 15px solid transparent;
-    border-left: 15px solid transparent;
+    border: 15px solid transparent;
+    border-bottom-color: #fff;
     position: absolute;
-    top: -15px;
-    left: 30px;
+    top: -30px;
+    left: 25px;
 }
 
 .comments__date {
