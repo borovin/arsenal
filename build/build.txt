@@ -56,8 +56,8 @@ main.css
 pages/main.js
 ----------------
 bower_components/get/get.js
-bower_components/deepExtend/deepExtend.js
 bower_components/set/set.js
+bower_components/deepExtend/deepExtend.js
 bower_components/makeClass/makeClass.js
 bower_components/backbone/backbone.js
 bower_components/block/block.js

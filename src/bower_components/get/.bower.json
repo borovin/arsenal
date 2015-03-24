@@ -1,6 +1,8 @@
 {
-  "name": "get",
-  "main": "get.js",
+  "name": "set",
+  "main": "set.js",
+  "version": "1.0.0",
+  "description": "Function for smart set object properties",
   "authors": [
     "a@borovin.com"
   ],
@@ -12,20 +14,26 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "tools",
     "test",
-    "tests"
+    "tests",
+    "coverage",
+    "index.html",
+    "require.config.js",
+    "package.json",
+    "Gruntfile.js"
   ],
   "dependencies": {
-    "lodash": "~3.1.0"
+    "lodash": "~3.5.0"
   },
   "homepage": "https://github.com/borovin/get",
-  "_release": "f97ae11331",
+  "_release": "1.0.0",
   "_resolution": {
-    "type": "branch",
-    "branch": "master",
-    "commit": "f97ae11331a1cd06c36939460b9d8bc608506b61"
+    "type": "version",
+    "tag": "v1.0.0",
+    "commit": "bd9faa489bd35b53c415d33fde2bb2899c021bb4"
   },
   "_source": "https://github.com/borovin/get.git",
-  "_target": "*",
+  "_target": "^1.0.0",
   "_originalSource": "https://github.com/borovin/get.git"
 }

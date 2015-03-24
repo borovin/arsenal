@@ -1,0 +1,26 @@
+{
+  "name": "arsenal",
+  "version": "0.0.0",
+  "homepage": "http://borovin.github.io/arsenal/build/",
+  "authors": [
+    "Andrew Borovin <a@borovin.com>"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.1.16",
+    "jquery": "^2.1.3",
+    "block": "https://github.com/borovin/block.git#dev"
+  },
+  "resolutions": {
+    "lodash": "^3.5.0"
+  }
+}

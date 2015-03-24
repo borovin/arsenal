@@ -1,2 +1,4 @@
 get
 ===
+
+Smart property getter

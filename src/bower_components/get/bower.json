@@ -1,7 +1,8 @@
 {
-  "name": "get",
-  "main": "get.js",
-  "version": "0.0.0",
+  "name": "set",
+  "main": "set.js",
+  "version": "0.0.1",
+  "description": "Function for smart set object properties",
   "authors": [
     "a@borovin.com"
   ],
@@ -13,10 +14,16 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "tools",
     "test",
-    "tests"
+    "tests",
+    "coverage",
+    "index.html",
+    "require.config.js",
+    "package.json",
+    "Gruntfile.js"
   ],
   "dependencies": {
-    "lodash": "~3.1.0"
+    "lodash": "~3.5.0"
   }
 }
