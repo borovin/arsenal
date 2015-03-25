@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "rm -rf ./build && node ./tools/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public"
+    "build": "rm -rf ./build && node ./node_modules/requirejs/bin/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public"
   },
-  "devDependencies": {
-    "express": "^4.10.7"
+  "dependencies": {
+    "express": "^4.10.7",
+    "requirejs": "^2.1.16"
   }
 }
