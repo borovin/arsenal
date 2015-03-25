@@ -9,6 +9,6 @@
     "commit": "b0044385de64e235c6fd34b94946433cd3a1e3b8"
   },
   "_source": "https://github.com/guybedford/amd-loader.git",
-  "_target": "^0.0.2",
+  "_target": "*",
   "_originalSource": "https://github.com/guybedford/amd-loader.git"
 }

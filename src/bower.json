@@ -18,7 +18,7 @@
   "dependencies": {
     "requirejs": "^2.1.16",
     "jquery": "^2.1.3",
-    "block": "https://github.com/borovin/block.git#dev"
+    "block": "https://github.com/borovin/block.git#master"
   },
   "resolutions": {
     "lodash": "^3.5.0"

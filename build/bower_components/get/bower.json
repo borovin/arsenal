@@ -1,8 +1,8 @@
 {
-  "name": "set",
-  "main": "set.js",
+  "name": "get",
+  "main": "get.js",
   "version": "0.0.1",
-  "description": "Function for smart set object properties",
+  "description": "Function for smart get object properties",
   "authors": [
     "a@borovin.com"
   ],
@@ -24,6 +24,6 @@
     "Gruntfile.js"
   ],
   "dependencies": {
-    "lodash": "~3.5.0"
+    "lodash": "^3.5.0"
   }
 }

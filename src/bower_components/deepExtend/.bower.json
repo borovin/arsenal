@@ -1,6 +1,7 @@
 {
   "name": "deepExtend",
   "main": "deepExtend.js",
+  "version": "1.0.0",
   "authors": [
     "a@borovin.com"
   ],
@@ -19,13 +20,13 @@
     "lodash": "^3.5.0"
   },
   "homepage": "https://github.com/borovin/deepExtend",
-  "_release": "0c3b9d336f",
+  "_release": "1.0.0",
   "_resolution": {
-    "type": "branch",
-    "branch": "master",
+    "type": "version",
+    "tag": "v1.0.0",
     "commit": "0c3b9d336ff983cba36ac6e231ed843dacae62cd"
   },
   "_source": "https://github.com/borovin/deepExtend.git",
-  "_target": "*",
+  "_target": "^1.0.0",
   "_originalSource": "https://github.com/borovin/deepExtend.git"
 }

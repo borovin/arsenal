@@ -24,14 +24,14 @@
     "Gruntfile.js"
   ],
   "dependencies": {
-    "lodash": "~3.5.0"
+    "lodash": "^3.5.0"
   },
   "homepage": "https://github.com/borovin/set",
   "_release": "1.0.0",
   "_resolution": {
     "type": "version",
     "tag": "v1.0.0",
-    "commit": "1f35ef86ebf981ebb80d20a70c176126914093b1"
+    "commit": "3f03cd23338b24abd6ab43155eeecee19fed6c94"
   },
   "_source": "https://github.com/borovin/set.git",
   "_target": "^1.0.0",

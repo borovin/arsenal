@@ -26,23 +26,23 @@
     "backbone": "^1.1.2",
     "jquery": "^2.1.1",
     "lodash": "^3.5.0",
-    "deepExtend": "https://github.com/borovin/deepExtend.git",
-    "makeClass": "https://github.com/borovin/makeClass.git",
+    "deepExtend": "https://github.com/borovin/deepExtend.git#^1.0.0",
+    "makeClass": "https://github.com/borovin/makeClass.git#^1.0.0",
     "get": "https://github.com/borovin/get.git#^1.0.0",
     "set": "https://github.com/borovin/set.git#^1.0.0",
-    "amd-loader": "https://github.com/guybedford/amd-loader.git#^0.0.2"
+    "amd-loader": "https://github.com/guybedford/amd-loader.git"
   },
   "resolutions": {
     "lodash": "^3.5.0"
   },
   "homepage": "https://github.com/borovin/block",
-  "_release": "604fa27fb4",
+  "_release": "973eb27c13",
   "_resolution": {
     "type": "branch",
-    "branch": "dev",
-    "commit": "604fa27fb48824f1cd34917995af2173145be5c2"
+    "branch": "master",
+    "commit": "973eb27c1321b7bee3e27463ad23ed679e11e166"
   },
   "_source": "https://github.com/borovin/block.git",
-  "_target": "dev",
+  "_target": "master",
   "_originalSource": "https://github.com/borovin/block.git"
 }
