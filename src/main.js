@@ -1,6 +1,6 @@
 define(function () {
 
-    requirejs([document.body.dataset.page], function (Page) {
+    requirejs([document.body.getAttribute('page')], function (Page) {
         new Page;
     });
 });
