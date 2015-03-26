@@ -6,7 +6,6 @@
     "build": "rm -rf ./build && node ./node_modules/requirejs/bin/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public"
   },
   "dependencies": {
-    "express": "^4.10.7",
     "requirejs": "^2.1.16"
   }
 }
