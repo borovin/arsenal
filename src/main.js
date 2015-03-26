@@ -1,6 +1,8 @@
 define(function () {
 
-    requirejs([document.body.getAttribute('page')], function (Page) {
+    var page = document.body.getAttribute('page');
+
+    page && requirejs([page], function (Page) {
         new Page;
     });
 });
