@@ -45,6 +45,7 @@ kit/page/page.css
 
 main.css
 ----------------
+common.css
 kit/page/page.css
 blocks/mainNavigation/mainNavigation.css
 blocks/carousel/carousel.css
