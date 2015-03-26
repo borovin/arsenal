@@ -35,6 +35,10 @@ blocks/wizard/wizard.css
 ----------------
 blocks/wizard/wizard.css
 
+common.css
+----------------
+common.css
+
 kit/page/page.css
 ----------------
 kit/page/page.css
