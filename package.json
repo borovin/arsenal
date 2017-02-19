@@ -6,6 +6,6 @@
     "build": "rm -rf ./build && node ./node_modules/requirejs/bin/r.js -o ./tools/buildConfig.js && ln -snf ./build/ public"
   },
   "dependencies": {
-    "requirejs": "^2.1.16"
+    "requirejs": "^2.3.3"
   }
 }
